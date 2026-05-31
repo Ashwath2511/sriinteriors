@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sri Interiors - Premium Luxury Interior Design & Space Planning Studio. Transforming spaces into timeless luxury.">
+    <title>Sri Interiors | Timeless Luxury Interior Design</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <!-- Swiper Slider CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Custom Cursor Glow -->
+    <div class="cursor-glow"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-logo">SRI INTERIORS</div>
+        <div class="loader-bar-container">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">SRI INTERIORS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#luxuryNavbar" aria-controls="luxuryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger-menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="luxuryNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-4 d-none d-lg-block">
+                    <a href="contact.html" class="btn-gold magnetic-btn">Get Consultation</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-sec">
+        <!-- Parallax Background Image -->
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="hero-overlay"></div>
+        <div class="container position-relative z-3">
+            <div class="row">
+                <div class="col-lg-10 col-xl-8">
+                    <span class="hero-subtitle">Premium Interior Design Studio</span>
+                    <h1 class="hero-title">
+                        <span class="char-stagger d-inline-block">Transforming</span>
+                        <span class="char-stagger d-inline-block">Spaces</span>
+                        <span class="char-stagger d-inline-block">Into</span>
+                        <span class="char-stagger d-inline-block">Timeless</span>
+                        <span class="char-stagger d-inline-block">Luxury</span>
+                    </h1>
+                    <p class="hero-subtitle text-gold mt-2 mb-5 font-accent" style="font-size: 1.1rem; letter-spacing: 3px;">
+                        Bespoke Residences &bull; Modular Masterpieces &bull; Artistic Execution
+                    </p>
+                    <div class="hero-cta d-flex flex-column flex-sm-row gap-3">
+                        <a href="projects.html" class="btn-gold-solid magnetic-btn">View Projects</a>
+                        <a href="contact.html" class="btn-gold magnetic-btn">Book Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="document.getElementById('about-teaser').scrollIntoView({behavior: 'smooth'})">
+            <div class="scroll-indicator-wheel">
+                <div class="scroll-indicator-dot"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Teaser Section (White Background) -->
+        <section id="about-teaser" class="section-white py-5 py-md-5 my-md-5">
+            <div class="container py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 reveal-up">
+                        <span class="section-tag">The Atelier</span>
+                        <h2 class="section-title">Crafting Spaces That Reflect Your Legacy</h2>
+                        <p class="section-desc">At Sri Interiors, we conceptualize designs that are refined, distinct, and tailor-made. Every texture, lighting choice, and layout is curated to balance modern efficiency with artistic warmth.</p>
+                        <p class="mb-4">With a dedicated team of master designers and skilled craftsmen, we deliver end-to-end luxury solutions for homeowners seeking premium details and stress-free execution.</p>
+                        <a href="about.html" class="btn-gold text-navy magnetic-btn">Discover Our Story</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-image-wrapper reveal-up">
+                            <div class="about-gold-border"></div>
+                            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Luxury interior detail" class="about-img-primary zoom-reveal-img">
+                            <img src="https://images.unsplash.com/photo-1618221469555-7f3ad97540d6?auto=format&fit=crop&w=600&q=80" alt="Bespoke furniture setup" class="about-img-secondary">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section (Navy Blue Background) -->
+        <section class="section-navy py-5 py-md-5">
+            <div class="container py-5">
+                <div class="row mb-5 justify-content-between align-items-end">
+                    <div class="col-lg-6 reveal-up">
+                        <span class="section-tag">Our Expertise</span>
+                        <h2 class="section-title text-gold">Premium Design Services</h2>
+                    </div>
+                    <div class="col-lg-5 text-lg-end reveal-up">
+                        <p class="section-desc mb-0">From modular kitchen conceptualization to full home architectural automation, we shape raw spaces into personalized sanctuaries.</p>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <!-- Service 1 -->
+                    <div class="col-md-6 col-lg-4 reveal-up">
+                        <div class="service-card service-card-dark">
+                            <div class="service-icon-box">
+                                <i class="fa-solid fa-couch"></i>
+                            </div>
+                            <h3 class="service-card-title text-gold">Home Interiors</h3>
+                            <p>Complete luxury space design, integrating custom woodwork, modern color schemes, smart lights, and hand-selected furnishing accents.</p>
+                            <a href="projects.html" class="service-learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="col-md-6 col-lg-4 reveal-up">
+                        <div class="service-card service-card-dark">
+                            <div class="service-icon-box">
+                                <i class="fa-solid fa-kitchen-set"></i>
+                            </div>
+                            <h3 class="service-card-title text-gold">Modular Kitchens</h3>
+                            <p>State-of-the-art layout patterns featuring German hardware, hydraulic cabinetry, custom quartz countertops, and built-in luxury appliances.</p>
+                            <a href="projects.html" class="service-learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="col-md-6 col-lg-4 reveal-up">
+                        <div class="service-card service-card-dark">
+                            <div class="service-icon-box">
+                                <i class="fa-solid fa-bed"></i>
+                            </div>
+                            <h3 class="service-card-title text-gold">Bedroom Designs</h3>
+                            <p>Peaceful personal retreats using soft acoustic textures, customized floating headboards, ambient backlighting, and built-in walk-in closets.</p>
+                            <a href="projects.html" class="service-learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="col-md-6 col-lg-4 reveal-up">
+                        <div class="service-card service-card-dark">
+                            <div class="service-icon-box">
+                                <i class="fa-solid fa-chair"></i>
+                            </div>
+                            <h3 class="service-card-title text-gold">Living Rooms</h3>
+                            <p>Stunning reception spaces constructed with media panel consoles, designer drop ceilings, floating shelves, and marble feature walls.</p>
+                            <a href="projects.html" class="service-learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="col-md-6 col-lg-4 reveal-up">
+                        <div class="service-card service-card-dark">
+                            <div class="service-icon-box">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <h3 class="service-card-title text-gold">Office Interiors</h3>
+                            <p>Ergonomic work environments utilizing hidden wire channels, custom desk partitions, sound absorbing acoustics, and premium lounge zones.</p>
+                            <a href="projects.html" class="service-learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="col-md-6 col-lg-4 reveal-up">
+                        <div class="service-card service-card-dark">
+                            <div class="service-icon-box">
+                                <i class="fa-solid fa-lightbulb"></i>
+                            </div>
+                            <h3 class="service-card-title text-gold">Lighting & Ceiling</h3>
+                            <p>Architectural false ceiling structures blending stretch ceiling canvas, profile LED channels, magnetic spots, and elegant crystal chandeliers.</p>
+                            <a href="projects.html" class="service-learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="statistics-sec py-5 section-navy" style="border-top: 1px solid rgba(212,175,55,0.1); border-bottom: 1px solid rgba(212,175,55,0.1);">
+            <div class="container py-4">
+                <div class="row g-4 text-center">
+                    <div class="col-6 col-lg-3 reveal-up">
+                        <div class="counter-box">
+                            <span class="counter-number" data-target="250">0</span><span class="counter-number text-gold">+</span>
+                            <div class="counter-label">Projects Completed</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 reveal-up">
+                        <div class="counter-box">
+                            <span class="counter-number" data-target="180">0</span><span class="counter-number text-gold">+</span>
+                            <div class="counter-label">Happy Clients</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 reveal-up">
+                        <div class="counter-box">
+                            <span class="counter-number" data-target="12">0</span><span class="counter-number text-gold">+</span>
+                            <div class="counter-label">Years Experience</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 reveal-up">
+                        <div class="counter-box">
+                            <span class="counter-number" data-target="15">0</span><span class="counter-number text-gold">+</span>
+                            <div class="counter-label">Design Awards</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section (White Background) -->
+        <section class="section-white py-5 py-md-5 my-md-5">
+            <div class="container py-5">
+                <div class="row mb-5 justify-content-between align-items-end">
+                    <div class="col-lg-6 reveal-up">
+                        <span class="section-tag">Featured Works</span>
+                        <h2 class="section-title">Unveiling Masterpiece Projects</h2>
+                    </div>
+                    <div class="col-lg-5 text-lg-end reveal-up">
+                        <a href="projects.html" class="btn-gold text-navy magnetic-btn">View All Projects</a>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Project 1 -->
+                    <div class="col-md-6 col-lg-4 reveal-up">
+                        <div class="portfolio-item">
+                            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Luxury Living Room" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Living Room</span>
+                                <h4 class="portfolio-title">The Golden Crest Residence</h4>
+                                <a href="gallery.html" class="portfolio-view-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="col-md-6 col-lg-4 reveal-up">
+                        <div class="portfolio-item">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Modern Kitchen" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Kitchen</span>
+                                <h4 class="portfolio-title">Aura Chef Culinary space</h4>
+                                <a href="gallery.html" class="portfolio-view-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="col-md-6 col-lg-4 reveal-up">
+                        <div class="portfolio-item">
+                            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=800&q=80" alt="Bespoke Bedroom" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Bedroom</span>
+                                <h4 class="portfolio-title">Serenity Master Suite</h4>
+                                <a href="gallery.html" class="portfolio-view-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials (Navy Blue Background) -->
+        <section class="section-navy py-5">
+            <div class="container py-5">
+                <div class="text-center mb-5 reveal-up">
+                    <span class="section-tag">Client Reviews</span>
+                    <h2 class="section-title text-gold">Echoes Of Satisfaction</h2>
+                    <p class="section-desc mx-auto text-center">Read feedback from our prestigious homeowners, recounting their design journeys with our studio.</p>
+                </div>
+
+                <div class="swiper testimonials-slider reveal-up">
+                    <div class="swiper-wrapper">
+                        <!-- Testimonial 1 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80" alt="Vikram Malhotra" class="testimonial-avatar">
+                                <div class="testimonial-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="testimonial-quote">"Sri Interiors completely reimagined our villa. The level of custom detail in our living room wood panels and the precision of the modular kitchen installation exceeded all expectations."</p>
+                                <h4 class="testimonial-name">Vikram Malhotra</h4>
+                                <span class="testimonial-role">CEO, TechVanguard</span>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80" alt="Anjali Sen" class="testimonial-avatar">
+                                <div class="testimonial-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="testimonial-quote">"Working with their design team was an absolute pleasure. They took the time to understand my aesthetic taste, delivering a bedroom suite that is both comforting and deeply luxurious."</p>
+                                <h4 class="testimonial-name">Anjali Sen</h4>
+                                <span class="testimonial-role">Art Director</span>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80" alt="Rajesh Kanna" class="testimonial-avatar">
+                                <div class="testimonial-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="testimonial-quote">"The timeline execution was perfectly on point. Transparency in material selection and premium project updates made the entire residential interior setup smooth and stress-free."</p>
+                                <h4 class="testimonial-name">Rajesh Kanna</h4>
+                                <span class="testimonial-role">Founder, Kanna Groups</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination Bullets -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter / CTA (White Background) -->
+        <section class="section-white py-5 py-md-5 my-md-5 text-center">
+            <div class="container py-5 reveal-up">
+                <span class="section-tag">Collaborate With Us</span>
+                <h2 class="section-title">Ready To Redefine Your Space?</h2>
+                <p class="section-desc mx-auto">Let our design artisans turn your luxury vision into concrete reality. Book a discovery call today.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="contact.html" class="btn-gold text-navy magnetic-btn">Get Free Consultation</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-4">
+                    <a class="footer-logo" href="index.html">SRI INTERIORS</a>
+                    <p class="footer-desc">Premium interior design studio dedicated to curating luxury residential layouts, smart modular kitchens, and artistic lighting designs for elite residences.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="projects.html">Home Interiors</a></li>
+                        <li><a href="projects.html">Modular Kitchens</a></li>
+                        <li><a href="projects.html">Bedroom Designs</a></li>
+                        <li><a href="projects.html">Living Room Designs</a></li>
+                        <li><a href="projects.html">Office Layouts</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="footer-heading">Contact Details</h4>
+                    <ul class="footer-links" style="color: var(--text-muted); font-size: 0.9rem;">
+                        <li class="mb-3"><i class="fa-solid fa-location-dot text-gold me-2"></i> 102, Prestige Plaza, Richmond Road, Bangalore, India</li>
+                        <li class="mb-3"><i class="fa-solid fa-phone text-gold me-2"></i> +91 98765 43210</li>
+                        <li class="mb-3"><i class="fa-solid fa-envelope text-gold me-2"></i> contact@sriinteriors.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-0">&copy; 2026 Sri Interiors. All rights reserved. Created with absolute luxury.</p>
+                <div class="mt-3 mt-md-0">
+                    <button class="back-to-top magnetic-btn" aria-label="Back to top">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper Slider JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

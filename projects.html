@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore luxury residential renovations, modular kitchens, master suites, and corporate office designs delivered by Sri Interiors.">
+    <title>Projects | Sri Interiors</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        /* Unique Styling for Case Study Page */
+        .project-case-study {
+            padding: 80px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .project-case-study:last-child {
+            border-bottom: none;
+        }
+        
+        .project-meta-box {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 25px;
+            font-family: var(--font-alt);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            padding-bottom: 15px;
+        }
+        
+        .project-meta-item strong {
+            color: var(--primary-navy);
+            font-family: var(--font-accent);
+            display: block;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .project-showcase-img-wrap {
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            aspect-ratio: 16/10;
+        }
+        
+        .project-showcase-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-smooth);
+        }
+        
+        .project-showcase-img-wrap:hover img {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Custom Cursor Glow -->
+    <div class="cursor-glow"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-logo">SRI INTERIORS</div>
+        <div class="loader-bar-container">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">SRI INTERIORS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#luxuryNavbar" aria-controls="luxuryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger-menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="luxuryNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-4 d-none d-lg-block">
+                    <a href="contact.html" class="btn-gold magnetic-btn">Get Consultation</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-bg" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="page-header-overlay"></div>
+        <div class="container text-center position-relative z-3">
+            <h1 class="page-header-title mb-3">Our Projects</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center breadcrumb-custom">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><span>Projects</span></li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <main>
+        <!-- Projects Section (White Background) -->
+        <section class="section-white py-5">
+            <div class="container py-4">
+                <div class="text-center mb-5 reveal-up">
+                    <span class="section-tag">Case Studies</span>
+                    <h2 class="section-title">Bespoke Design Portfolios</h2>
+                    <p class="section-desc mx-auto text-center">Every residency design is a story of collaboration, premium sourcing, and meticulous execution details.</p>
+                </div>
+
+                <!-- Case Study 1 -->
+                <div class="project-case-study">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 order-lg-2">
+                            <div class="project-showcase-img-wrap reveal-up">
+                                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80" alt="The Golden Crest Residence" class="zoom-reveal-img">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1 reveal-up">
+                            <span class="section-tag">Residential</span>
+                            <h3 class="section-title mb-3" style="font-size: 1.85rem;">The Golden Crest Residence</h3>
+                            
+                            <div class="project-meta-box">
+                                <div class="project-meta-item">
+                                    <strong>Location</strong>
+                                    Bangalore, India
+                                </div>
+                                <div class="project-meta-item">
+                                    <strong>Completed</strong>
+                                    May 2025
+                                </div>
+                                <div class="project-meta-item">
+                                    <strong>Scope</strong>
+                                    Full Residential Design
+                                </div>
+                            </div>
+                            
+                            <p class="mb-4">This villa combines gold metallic linings with raw teak panels to construct an open, warm living environment. High-end false ceiling profile LED channels reflect beautifully on the customized Italian marble floor layers.</p>
+                            <p class="mb-4">Custom furniture elements (including modular sofa frames and floating marble TV consoles) were hand-built in our carpentry atelier before onsite execution.</p>
+                            <a href="gallery.html" class="btn-gold text-navy magnetic-btn">View Gallery Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="project-case-study">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6">
+                            <div class="project-showcase-img-wrap reveal-up">
+                                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" alt="Aura Chef Culinary Suite" class="zoom-reveal-img">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 reveal-up">
+                            <span class="section-tag">Modular Kitchen</span>
+                            <h3 class="section-title mb-3" style="font-size: 1.85rem;">Aura Chef Culinary Suite</h3>
+                            
+                            <div class="project-meta-box">
+                                <div class="project-meta-item">
+                                    <strong>Location</strong>
+                                    Chennai, India
+                                </div>
+                                <div class="project-meta-item">
+                                    <strong>Completed</strong>
+                                    December 2024
+                                </div>
+                                <div class="project-meta-item">
+                                    <strong>Scope</strong>
+                                    Modular Kitchen & Bar
+                                </div>
+                            </div>
+                            
+                            <p class="mb-4">A high-tech kitchen space customized for professional home cooking. The layout utilizes German hydraulic soft-close cabinetry, a quartz waterfall island counter, and hidden automated garbage and spice racks.</p>
+                            <p class="mb-4">Finished in sleek dark-glass acrylic surfaces with matching under-cabinet profile lighting that adjusts colors depending on active times.</p>
+                            <a href="gallery.html" class="btn-gold text-navy magnetic-btn">View Gallery Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="project-case-study">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 order-lg-2">
+                            <div class="project-showcase-img-wrap reveal-up">
+                                <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1200&q=80" alt="Serenity Master Suite" class="zoom-reveal-img">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1 reveal-up">
+                            <span class="section-tag">Bedroom</span>
+                            <h3 class="section-title mb-3" style="font-size: 1.85rem;">Serenity Master Suite</h3>
+                            
+                            <div class="project-meta-box">
+                                <div class="project-meta-item">
+                                    <strong>Location</strong>
+                                    Hyderabad, India
+                                </div>
+                                <div class="project-meta-item">
+                                    <strong>Completed</strong>
+                                    March 2025
+                                </div>
+                                <div class="project-meta-item">
+                                    <strong>Scope</strong>
+                                    Bedroom & Walk-in Closet
+                                </div>
+                            </div>
+                            
+                            <p class="mb-4">A peaceful suite engineered with sound absorbing wall fabrics and double-layered acoustic pane layouts. Custom floating bed structures have warm dimming LEDs that illuminate the path on contact sensors.</p>
+                            <p class="mb-4">A walk-in wardrobe featuring golden steel frames, tinted glass doors, and automated LED strip activations organizes the client's boutique selection beautifully.</p>
+                            <a href="gallery.html" class="btn-gold text-navy magnetic-btn">View Gallery Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 4 -->
+                <div class="project-case-study">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6">
+                            <div class="project-showcase-img-wrap reveal-up">
+                                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" alt="Vistara Corporate Office" class="zoom-reveal-img">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 reveal-up">
+                            <span class="section-tag">Commercial Office</span>
+                            <h3 class="section-title mb-3" style="font-size: 1.85rem;">Vistara Executive Chambers</h3>
+                            
+                            <div class="project-meta-box">
+                                <div class="project-meta-item">
+                                    <strong>Location</strong>
+                                    Bangalore, India
+                                </div>
+                                <div class="project-meta-item">
+                                    <strong>Completed</strong>
+                                    October 2024
+                                </div>
+                                <div class="project-meta-item">
+                                    <strong>Scope</strong>
+                                    Corporate Office Layout
+                                </div>
+                            </div>
+                            
+                            <p class="mb-4">An ergonomic corporate sanctuary featuring glass partitions that switch opacity instantly at the click of a remote. The layout balances structural steel, warm lighting grids, and dynamic acoustic wall setups to support private concentration.</p>
+                            <p class="mb-4">The main lounge features premium custom sofas, brass decor panels, and integrated power sockets inside modular walnut table layouts.</p>
+                            <a href="gallery.html" class="btn-gold text-navy magnetic-btn">View Gallery Details</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-4">
+                    <a class="footer-logo" href="index.html">SRI INTERIORS</a>
+                    <p class="footer-desc">Premium interior design studio dedicated to curating luxury residential layouts, smart modular kitchens, and artistic lighting designs for elite residences.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="projects.html">Home Interiors</a></li>
+                        <li><a href="projects.html">Modular Kitchens</a></li>
+                        <li><a href="projects.html">Bedroom Designs</a></li>
+                        <li><a href="projects.html">Living Room Designs</a></li>
+                        <li><a href="projects.html">Office Layouts</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="footer-heading">Contact Details</h4>
+                    <ul class="footer-links" style="color: var(--text-muted); font-size: 0.9rem;">
+                        <li class="mb-3"><i class="fa-solid fa-location-dot text-gold me-2"></i> 102, Prestige Plaza, Richmond Road, Bangalore, India</li>
+                        <li class="mb-3"><i class="fa-solid fa-phone text-gold me-2"></i> +91 98765 43210</li>
+                        <li class="mb-3"><i class="fa-solid fa-envelope text-gold me-2"></i> contact@sriinteriors.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-0">&copy; 2026 Sri Interiors. All rights reserved. Created with absolute luxury.</p>
+                <div class="mt-3 mt-md-0">
+                    <button class="back-to-top magnetic-btn" aria-label="Back to top">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

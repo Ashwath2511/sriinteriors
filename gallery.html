@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View high-resolution photography of completed interior renovations and interact with our room transformation slider.">
+    <title>Gallery | Sri Interiors</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Custom Cursor Glow -->
+    <div class="cursor-glow"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-logo">SRI INTERIORS</div>
+        <div class="loader-bar-container">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">SRI INTERIORS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#luxuryNavbar" aria-controls="luxuryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger-menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="luxuryNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-4 d-none d-lg-block">
+                    <a href="contact.html" class="btn-gold magnetic-btn">Get Consultation</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-bg" style="background-image: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="page-header-overlay"></div>
+        <div class="container text-center position-relative z-3">
+            <h1 class="page-header-title mb-3">Our Gallery</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center breadcrumb-custom">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><span>Gallery</span></li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <main>
+        <!-- Before / After Slider Section (White Background) -->
+        <section class="section-white py-5">
+            <div class="container py-4">
+                <div class="text-center mb-5 reveal-up">
+                    <span class="section-tag">Transformation</span>
+                    <h2 class="section-title">The Power Of Design</h2>
+                    <p class="section-desc mx-auto text-center">Slide the golden bar horizontally to view the conversion of a raw interior brick shell into a fully finished luxury living lounge.</p>
+                </div>
+
+                <div class="before-after-container reveal-up mb-5">
+                    <!-- Before Image -->
+                    <div class="ba-image ba-before" style="background-image: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80');">
+                        <div class="ba-label">Before</div>
+                    </div>
+                    <!-- After Image -->
+                    <div class="ba-image ba-after" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80');">
+                        <div class="ba-label">After</div>
+                    </div>
+                    <!-- Drag handle -->
+                    <div class="ba-handle">
+                        <div class="ba-handle-circle">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Grid Gallery (Navy Blue Background) -->
+        <section class="section-navy py-5">
+            <div class="container py-5">
+                <div class="text-center mb-5 reveal-up">
+                    <span class="section-tag">Atelier Catalog</span>
+                    <h2 class="section-title text-gold">Completed Creations</h2>
+                    <p class="section-desc mx-auto text-center">Browse through our curated portfolio categories. Click on the zoom icon to view the images in high resolution.</p>
+                </div>
+
+                <!-- Filter Navigation -->
+                <div class="filter-container reveal-up">
+                    <button class="filter-btn active" data-filter="all">All Designs</button>
+                    <button class="filter-btn" data-filter="living">Living Rooms</button>
+                    <button class="filter-btn" data-filter="kitchen">Kitchens</button>
+                    <button class="filter-btn" data-filter="bedroom">Bedrooms</button>
+                    <button class="filter-btn" data-filter="office">Offices</button>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid">
+                    <!-- Item 1 -->
+                    <div class="portfolio-item reveal-up" data-category="living">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Living Room" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Living Room</span>
+                            <h4 class="portfolio-title">The Golden Crest Residence</h4>
+                            <a href="#" class="portfolio-view-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="portfolio-item reveal-up" data-category="kitchen">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Kitchen" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Kitchen</span>
+                            <h4 class="portfolio-title">Aura Chef Culinary space</h4>
+                            <a href="#" class="portfolio-view-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="portfolio-item reveal-up" data-category="bedroom">
+                        <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=800&q=80" alt="Bedroom" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Bedroom</span>
+                            <h4 class="portfolio-title">Serenity Master Suite</h4>
+                            <a href="#" class="portfolio-view-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="portfolio-item reveal-up" data-category="living">
+                        <img src="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&w=800&q=80" alt="Living Room" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Living Room</span>
+                            <h4 class="portfolio-title">Classic Oak Lounge</h4>
+                            <a href="#" class="portfolio-view-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="portfolio-item reveal-up" data-category="kitchen">
+                        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Kitchen" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Kitchen</span>
+                            <h4 class="portfolio-title">Nordic Minimalist Pantry</h4>
+                            <a href="#" class="portfolio-view-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="portfolio-item reveal-up" data-category="bedroom">
+                        <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80" alt="Bedroom" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Bedroom</span>
+                            <h4 class="portfolio-title">Gilded Dreams Suite</h4>
+                            <a href="#" class="portfolio-view-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>
+                    <!-- Item 7 -->
+                    <div class="portfolio-item reveal-up" data-category="office">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Office" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Office</span>
+                            <h4 class="portfolio-title">Vistara Executive Chambers</h4>
+                            <a href="#" class="portfolio-view-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>
+                    <!-- Item 8 -->
+                    <div class="portfolio-item reveal-up" data-category="office">
+                        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80" alt="Office" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Office</span>
+                            <h4 class="portfolio-title">Aura Acoustic Pods</h4>
+                            <a href="#" class="portfolio-view-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox-modal">
+        <div class="lightbox-content">
+            <span id="lightbox-close" class="lightbox-close">&times;</span>
+            <img id="lightbox-img" class="lightbox-img" src="" alt="Zoomed view">
+            <h4 id="lightbox-caption" class="lightbox-caption">Caption</h4>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-4">
+                    <a class="footer-logo" href="index.html">SRI INTERIORS</a>
+                    <p class="footer-desc">Premium interior design studio dedicated to curating luxury residential layouts, smart modular kitchens, and artistic lighting designs for elite residences.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="projects.html">Home Interiors</a></li>
+                        <li><a href="projects.html">Modular Kitchens</a></li>
+                        <li><a href="projects.html">Bedroom Designs</a></li>
+                        <li><a href="projects.html">Living Room Designs</a></li>
+                        <li><a href="projects.html">Office Layouts</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="footer-heading">Contact Details</h4>
+                    <ul class="footer-links" style="color: var(--text-muted); font-size: 0.9rem;">
+                        <li class="mb-3"><i class="fa-solid fa-location-dot text-gold me-2"></i> 102, Prestige Plaza, Richmond Road, Bangalore, India</li>
+                        <li class="mb-3"><i class="fa-solid fa-phone text-gold me-2"></i> +91 98765 43210</li>
+                        <li class="mb-3"><i class="fa-solid fa-envelope text-gold me-2"></i> contact@sriinteriors.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-0">&copy; 2026 Sri Interiors. All rights reserved. Created with absolute luxury.</p>
+                <div class="mt-3 mt-md-0">
+                    <button class="back-to-top magnetic-btn" aria-label="Back to top">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Sri Interiors. Consult with our luxury curators for premium home renovations, kitchen setups, and room designs.">
+    <title>Contact Us | Sri Interiors</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        /* Custom Select element style adjustment for dark theme */
+        .contact-select {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--text-light);
+            width: 100%;
+            padding: 10px 0;
+            outline: none;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 300;
+            transition: var(--transition-fast);
+            appearance: none;
+            -webkit-appearance: none;
+            cursor: pointer;
+        }
+        
+        .contact-select option {
+            background: var(--primary-navy);
+            color: var(--text-light);
+        }
+        
+        .contact-select:focus {
+            border-bottom-color: var(--accent-gold);
+        }
+        
+        .contact-select-arrow {
+            position: absolute;
+            right: 0;
+            top: 15px;
+            color: var(--text-muted);
+            pointer-events: none;
+            font-size: 0.8rem;
+        }
+        
+        .contact-select:focus ~ .contact-select-arrow {
+            color: var(--accent-gold);
+        }
+        
+        /* Grayscale Map Integration for Luxury Theme */
+        .luxury-map {
+            filter: grayscale(100%) invert(90%) contrast(95%);
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Custom Cursor Glow -->
+    <div class="cursor-glow"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-logo">SRI INTERIORS</div>
+        <div class="loader-bar-container">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">SRI INTERIORS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#luxuryNavbar" aria-controls="luxuryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger-menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="luxuryNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-4 d-none d-lg-block">
+                    <a href="contact.html" class="btn-gold magnetic-btn">Get Consultation</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-bg" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="page-header-overlay"></div>
+        <div class="container text-center position-relative z-3">
+            <h1 class="page-header-title mb-3">Contact Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center breadcrumb-custom">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><span>Contact Us</span></li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <main>
+        <!-- Contact Core Section (Navy Blue Background - Gold details strictly enforced) -->
+        <section class="section-navy py-5">
+            <div class="container py-5">
+                <div class="row mb-5 justify-content-center text-center">
+                    <div class="col-lg-7 reveal-up">
+                        <span class="section-tag">Reach Out</span>
+                        <h2 class="section-title text-gold">Let's Craft Your Luxury Masterpiece</h2>
+                        <p class="section-desc mx-auto">Fill out the luxury project intake form below, or chat with our design curators instantly on WhatsApp.</p>
+                    </div>
+                </div>
+
+                <div class="row g-5 align-items-stretch">
+                    <!-- Column 1: Contact details & quick WhatsApp channel -->
+                    <div class="col-lg-5 d-flex flex-column justify-content-between reveal-up">
+                        <div class="glass-card h-100 d-flex flex-column justify-content-between p-4 p-md-5">
+                            <div>
+                                <h3 class="font-accent text-gold mb-4" style="font-size: 1.35rem; letter-spacing: 2px;">THE STUDIO DETAILS</h3>
+                                
+                                <!-- Address info -->
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div>
+                                        <div class="contact-info-title">Atelier Address</div>
+                                        <div class="contact-info-text">102, Prestige Plaza, Richmond Road, Bangalore, Karnataka, India - 560025</div>
+                                    </div>
+                                </div>
+
+                                <!-- Phone info -->
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+                                    <div>
+                                        <div class="contact-info-title">Phone & Inquiry Lines</div>
+                                        <div class="contact-info-text">+91 98765 43210<br>+91 80 4567 8910</div>
+                                    </div>
+                                </div>
+
+                                <!-- Email info -->
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                    <div>
+                                        <div class="contact-info-title">Electronic Mail</div>
+                                        <div class="contact-info-text">design@sriinteriors.com<br>support@sriinteriors.com</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- WhatsApp quick CTA -->
+                            <div class="pt-4 border-top border-secondary">
+                                <h4 class="font-accent text-gold mb-3" style="font-size: 0.95rem; letter-spacing: 1.5px;">INSTANT SUPPORT CHANNEL</h4>
+                                <p style="font-size: 0.9rem;" class="mb-4">Need answers right away? Speak to our executive design coordinator via WhatsApp for direct pricing or layouts.</p>
+                                <a href="https://wa.me/919876543210?text=Hi%20Sri%20Interiors,%20I%20am%20interested%20in%20a%20luxury%20design%20consultation." target="_blank" class="btn-gold magnetic-btn w-100 text-center"><i class="fa-brands fa-whatsapp me-2"></i> CHAT ON WHATSAPP</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Premium Contact Form -->
+                    <div class="col-lg-7 reveal-up">
+                        <div class="glass-card contact-form-card h-100 p-4 p-md-5">
+                            <h3 class="font-accent text-gold mb-5" style="font-size: 1.35rem; letter-spacing: 2px;">PROJECT INTAKE SHEET</h3>
+                            
+                            <form id="luxuryContactForm" novalidate>
+                                <!-- Name -->
+                                <div class="contact-form-group">
+                                    <input type="text" id="name" class="contact-input" required autocomplete="off">
+                                    <label for="name" class="contact-label">Full Name</label>
+                                    <div class="contact-input-line"></div>
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="contact-form-group">
+                                    <input type="tel" id="phone" class="contact-input" required autocomplete="off">
+                                    <label for="phone" class="contact-label">Mobile Number</label>
+                                    <div class="contact-input-line"></div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="contact-form-group">
+                                    <input type="email" id="email" class="contact-input" required autocomplete="off">
+                                    <label for="email" class="contact-label">Email Address</label>
+                                    <div class="contact-input-line"></div>
+                                </div>
+
+                                <!-- Service selection -->
+                                <div class="contact-form-group">
+                                    <select id="service" class="contact-select" required>
+                                        <option value="" disabled selected></option>
+                                        <option value="home">Full Home Interiors</option>
+                                        <option value="kitchen">Modular Kitchen Renovation</option>
+                                        <option value="bedroom">Bedroom / Closet Styling</option>
+                                        <option value="living">Living Room Makeover</option>
+                                        <option value="office">Corporate Office Layout</option>
+                                        <option value="lighting">Ceiling & Lighting Design</option>
+                                    </select>
+                                    <label for="service" class="contact-label">Required Curation Service</label>
+                                    <span class="contact-select-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+                                    <div class="contact-input-line"></div>
+                                </div>
+
+                                <!-- Message -->
+                                <div class="contact-form-group">
+                                    <textarea id="message" class="contact-input" rows="4" required></textarea>
+                                    <label for="message" class="contact-label">Describe Your Luxury Dream Space...</label>
+                                    <div class="contact-input-line"></div>
+                                </div>
+
+                                <!-- Submit CTA -->
+                                <div class="text-end">
+                                    <button type="submit" class="btn-gold-solid magnetic-btn px-5 w-100 w-sm-auto">SUBMIT SHEET</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Embedded Map Section (White Background) -->
+        <section class="section-white py-5">
+            <div class="container py-4 reveal-up">
+                <div class="text-center mb-5">
+                    <span class="section-tag">Atelier Coordinates</span>
+                    <h2 class="section-title">Visit Our Experience Lounge</h2>
+                </div>
+                <div class="map-container">
+                    <!-- Bangalore Coordinates -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.989063714652!2d77.60481237583626!3d12.972512115160866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35e07663e2a561bb%3A0xc48c4cc8935c1ba!2sRichmond%20Rd%2C%20Bangalore!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                        class="luxury-map" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-4">
+                    <a class="footer-logo" href="index.html">SRI INTERIORS</a>
+                    <p class="footer-desc">Premium interior design studio dedicated to curating luxury residential layouts, smart modular kitchens, and artistic lighting designs for elite residences.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="projects.html">Home Interiors</a></li>
+                        <li><a href="projects.html">Modular Kitchens</a></li>
+                        <li><a href="projects.html">Bedroom Designs</a></li>
+                        <li><a href="projects.html">Living Room Designs</a></li>
+                        <li><a href="projects.html">Office Layouts</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="footer-heading">Contact Details</h4>
+                    <ul class="footer-links" style="color: var(--text-muted); font-size: 0.9rem;">
+                        <li class="mb-3"><i class="fa-solid fa-location-dot text-gold me-2"></i> 102, Prestige Plaza, Richmond Road, Bangalore, India</li>
+                        <li class="mb-3"><i class="fa-solid fa-phone text-gold me-2"></i> +91 98765 43210</li>
+                        <li class="mb-3"><i class="fa-solid fa-envelope text-gold me-2"></i> contact@sriinteriors.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-0">&copy; 2026 Sri Interiors. All rights reserved. Created with absolute luxury.</p>
+                <div class="mt-3 mt-md-0">
+                    <button class="back-to-top magnetic-btn" aria-label="Back to top">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
